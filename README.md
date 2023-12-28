@@ -1,20 +1,21 @@
 # chrome extension boilerplate simple
 
-## Installation 🛠️ 
+## Installation 🛠️
 
 prerequisites:
+
 - Developer Mode: Ensure developer mode is enabled in Chrome settings
- 
+
 1. Clone this repo
-`git clone ...`
+   `git clone ...`
 
-2. Go to `chrome://extensions/` in Chrome   
+1. Go to `chrome://extensions/` in Chrome
 
-3. Click on `Load unpacked extension`
-```
+1. Click on `Load unpacked extension`
+
+```text
 🗒️ note: there's no build process here, so we can just select the whole directory
 ```
-
 
 ## how to pack and publish this extension
 
