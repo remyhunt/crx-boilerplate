@@ -18,7 +18,11 @@ prerequisites:
 
 ## how to pack and publish this extension
 
-1. Go to `chrome://extensions/` 
-2. Click `Details` of our extension
-3. On the top bar left bar, click `Pack Extension`
-4. 
+confusingly, `Pack`'ing the extension is not what's required for publishing. We actually have to zip the extension, which we can do as follows:
+
+`Note that: we're not zipping the whole directory - but only the contents, since the zip file will be unpacked by the browser`
+
+Now that we have this `.zip` file containing our project, we can
+
+1. Navigate to Chrome Web Store Developer Dashboard [https://chrome.google.com/webstore/devconsole/](https://chrome.google.com/webstore/devconsole/)
+2. Choose `New Item`, and upload our `.zip` file.
