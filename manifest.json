@@ -1,16 +1,45 @@
 {
-    "manifest_version": 3,
-    "name": "chrome extension boilerplate",
-    "description": "",
-    "version": "0.0.1",
-    "author": "Remy Hunter",
-    "icons": {
-      "16": "assets/icons/icon16.png",
-      "48": "assets/icons/icon48.png",
-      "128": "assets/icons/icon128.png"
+  "manifest_version": 3,
+  "name": "chrome extension boilerplate",
+  "description": "",
+  "version": "0.0.1",
+  "author": "Remy Hunter",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": ["tabs", "scripting", "activeTab", "storage"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Run \"foo\" on the current page."
     },
-    "chrome_url_overrides" : {
-      "newtab": "index.html"
+    "_execute_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
     }
   }
-  
+}
