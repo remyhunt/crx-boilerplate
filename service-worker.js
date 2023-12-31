@@ -6,6 +6,11 @@ async function getCurrentTab() {
 
 chrome.commands.onCommand.addListener((command) => {
   if (command === "open-popup") {
+    // focus on search bar using omnibar api
+
+
+    chrome.omnibox.focus();
+
     getCurrentTab().then((tab) => {
       console.log("tab id", tab.id);
       let id = tab.id;
