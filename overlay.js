@@ -31,5 +31,7 @@ overlay.innerHTML = `
   <h1>Overlay</h1>
   <p>Overlay content</p>
 `;
+
 // append child above body
 body.insertBefore(overlay, body.firstChild);
+

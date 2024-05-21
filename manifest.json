@@ -10,15 +10,12 @@
     "128": "assets/icons/icon128.png"
   },
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "service-worker.js"
   },
   "permissions": ["tabs", "scripting", "activeTab", "storage"],
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -35,8 +32,8 @@
     },
     "_execute_action": {
       "suggested_key": {
-        "windows": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+Y",
+        "windows": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P",
         "chromeos": "Ctrl+Shift+U",
         "linux": "Ctrl+Shift+J"
       }
