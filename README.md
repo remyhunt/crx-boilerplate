@@ -27,3 +27,7 @@ Now that we have this `.zip` file containing our project, we can
 
 1. Navigate to Chrome Web Store Developer Dashboard [https://chrome.google.com/webstore/devconsole/](https://chrome.google.com/webstore/devconsole/)
 2. Choose `New Item`, and upload our `.zip` file.
+
+## prepping for publishing to the app store
+
+- [ ] Update the `manifest.json` file with the correct information
